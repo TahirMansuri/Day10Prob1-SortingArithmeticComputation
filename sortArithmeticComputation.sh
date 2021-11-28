@@ -34,3 +34,8 @@ resultArray=(${resultDict[Compute1]} ${resultDict[Compute2]} ${resultDict[Comput
 readarray -t resultDesc < <(for a in "${resultArray[@]}"; do echo "$a"; done | sort -nr);
 
 echo "Descending Order : " ${resultDesc[@]};
+
+#Sorting thge Array in Ascending Order
+readarray -t resultAsc < <(for b in "${resultArray[@]}"; do echo "$b"; done | sort -n);
+
+echo "Ascending Order : " ${resultAsc[@]};

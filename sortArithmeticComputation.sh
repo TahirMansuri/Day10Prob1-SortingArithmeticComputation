@@ -12,3 +12,6 @@ w=$(( $a + $b * $c ));
 
 #Computing the Arithmetic 2nd Value
 x=$(( $a * $b + $c ));
+
+#Computing the Arithmetic 3rd Value
+y=$(( $c + $a / $b ));

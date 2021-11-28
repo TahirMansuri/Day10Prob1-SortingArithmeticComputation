@@ -7,5 +7,8 @@ read -p "Enter the First Number: " a;
 read -p "Enter the Second Number: " b;
 read -p "Enter the Third Number: " c;
 
-#Computing the Arithmetic Value
+#Computing the Arithmetic 1st Value
 w=$(( $a + $b * $c ));
+
+#Computing the Arithmetic 2nd Value
+x=$(( $a * $b + $c ));

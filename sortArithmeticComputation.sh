@@ -29,3 +29,8 @@ resultDict[Compute4]=$z;
 #Creating Array for Dictionary Result
 resultArray=();
 resultArray=(${resultDict[Compute1]} ${resultDict[Compute2]} ${resultDict[Compute3]} ${resultDict[Compute4]});
+
+#Sorting the Array in Descending Order
+readarray -t resultDesc < <(for a in "${resultArray[@]}"; do echo "$a"; done | sort -nr);
+
+echo "Descending Order : " ${resultDesc[@]};

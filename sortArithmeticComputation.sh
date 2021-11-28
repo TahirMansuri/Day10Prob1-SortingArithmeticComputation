@@ -11,8 +11,8 @@ read -p "Enter the Second Number: " b;
 read -p "Enter the Third Number: " c;
 
 #Computing the Arithmetic 1st Value
-w=(( $a + $b * $c ));
-resultDict[compute1]=$w;
+w=$(( $a + $b * $c ));
+resultDict[Compute1]=$w;
 
 #Computing the Arithmetic 2nd Value
 x=$(( $a * $b + $c ));
@@ -26,3 +26,6 @@ resultDict[Compute3]=$y;
 z=$(( $a % $b + $c ));
 resultDict[Compute4]=$z;
 
+#Creating Array for Dictionary Result
+resultArray=();
+resultArray=(${resultDict[Compute1]} ${resultDict[Compute2]} ${resultDict[Compute3]} ${resultDict[Compute4]});

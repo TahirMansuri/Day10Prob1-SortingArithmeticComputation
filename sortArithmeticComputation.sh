@@ -15,3 +15,6 @@ x=$(( $a * $b + $c ));
 
 #Computing the Arithmetic 3rd Value
 y=$(( $c + $a / $b ));
+
+#Computing the Arithmetic 4th Value
+z=$(( $a % $b + $c ));
